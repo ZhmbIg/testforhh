@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "NodeNext",
+    "target": "ESNext",
+    "moduleResolution": "NodeNext",
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "paths": {
+      "#*": [
+        "./src/*"
+      ]
+    },
+    "esModuleInterop": true,
+    "allowJs": true,
+    "checkJs": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/**/*.test.*",
+    "src/**/*.spec.*"
+  ]
+}
