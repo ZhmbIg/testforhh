@@ -9,3 +9,6 @@ dist/
 
 # Logs
 *.log
+
+# Секретные файлы
+src/*.json

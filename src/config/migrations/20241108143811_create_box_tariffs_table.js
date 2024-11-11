@@ -3,7 +3,9 @@ import knex from 'knex';
 
 const db = knex(knexConfig); 
 
+// @ts-ignore
 export function up(knex) {
+  // @ts-ignore
   return knex.schema.createTable('tariffs', function (table) {
     table.increments('id').primary();
     table.string('warehouse_name').notNullable();
@@ -18,6 +20,7 @@ export function up(knex) {
   });
 };
 
+// @ts-ignore
 export function down(knex) {
   return knex.schema.dropTableIfExists('tariffs');
 };
